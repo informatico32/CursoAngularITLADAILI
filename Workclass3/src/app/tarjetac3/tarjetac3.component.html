@@ -1,0 +1,15 @@
+<p>works!</p>
+
+<div class="card" *ngIf="nombre && posicion && descripcion; else elementoalterno">
+  <h2>Tarjeta de presentación</h2>
+  <p>Nombre: {{nombre}}</p>
+  <p>Posicion: {{posicion}}</p>
+  <p>Descripcion: {{descripcion}}</p>
+</div>
+<ng-template #elementoalterno>
+  <div class="card opcional">
+      <h2>Sin Informacion</h2>
+  </div>
+</ng-template>
+
+
