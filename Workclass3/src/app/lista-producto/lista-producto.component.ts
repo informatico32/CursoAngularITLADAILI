@@ -7,45 +7,25 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ListaProductoComponent implements OnInit {
 
-@Input()
-  categoria : string [] =[
-  "Carnes y Embutidos",
-  "Frutas y Verduras",
-  "Panadería y Dulces",
-  "Huevos, Lácteos y Café",
-  "Aceite, Pasta y Legumbres",
-  "Conservas y Comida Preparada",
-  "Zumos y Bebidas",
-  "Aperitivos",
-  "Algas, Tofu y Preparados",
-  "Infantil",
-  "Cosmética y Cuidado Personal",
-  "Hogar y Limpieza"
-    ];
-    @Input()
-    Ubicacioncategoria : string [] =[
-      "Pasillo #2",
-      "Pasillo #1",
-      "Pasillo #4",
-      "Pasillo #8",
-      "Pasillo #12",
-      "Pasillo #16",
-      "Pasillo #22",
-      "Pasillo #7",
-      "Pasillo #6",
-      "Pasillo #005",
-      "Pasillo #17",
-      "Pasillo #10",
+
+        @Input()
+        Producto: Array<{id: number, Categoria: string, ubicacion:string }> = [
+          { id: 1,  Categoria: "Carnes y Embutidos" ,          ubicacion:"Pasillo #2"},
+          { id: 2,  Categoria: "Frutas y Verduras",            ubicacion: "Pasillo #1"},
+          { id: 3,  Categoria: "Panadería y Dulces",           ubicacion: "Pasillo #4" },
+          { id: 4,  Categoria: "Huevos, Lácteos y Café",       ubicacion: "Pasillo #8"},
+          { id: 5,  Categoria: "Aceite, Pasta y Legumbres" ,   ubicacion: "Pasillo #12"},
+          { id: 6,  Categoria: "Conservas y Comida Preparada", ubicacion: "Pasillo #16" },
+          { id: 7,  Categoria: "Zumos y Bebidas",              ubicacion: "Pasillo #22" },
+          { id: 8,  Categoria: "Aperitivos",                   ubicacion: "Pasillo #7"},
+
+          { id: 9,  Categoria:  "Algas, Tofu y Preparados" ,   ubicacion: "Pasillo #6"},
+          { id: 10, Categoria: "Infantil",                    ubicacion: "Pasillo #1005" },
+          { id: 11, Categoria: "Cosmética y Cuidado Personal",ubicacion: "Pasillo #17" },
+          { id: 12, Categoria: "Hogar y Limpieza",            ubicacion: "Pasillo #10"}
+
+
         ];
-
-        producto : object ={
-
-          nombre: "miguel",
-          categoria:"guayaba"
-
-
-
-        }
 
   constructor() { }
 

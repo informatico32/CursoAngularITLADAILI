@@ -4,6 +4,9 @@
 
 </pre>
 
+<h1>
+  
+</h1>
 
 <table  class="table table-hover">
   <thead>
@@ -13,11 +16,11 @@
       <th scope="col">Ubicacion</th>
     </tr>
   </thead>
-  <tbody>
-    <tr  *ngFor=" let elemento1 of categoria; index as i;" class="table-light">
+  <tbody *ngFor="let elemento of Producto index as i"   >
+    <tr  class="table-light">
       <th scope="row">{{i+1}}</th>
-      <td>{{elemento1}}</td>
-      <td></td>
+      <td>{{elemento.Categoria}}</td>
+      <td>{{elemento.ubicacion}}</td>
     </tr>
   </tbody>
 </table>
