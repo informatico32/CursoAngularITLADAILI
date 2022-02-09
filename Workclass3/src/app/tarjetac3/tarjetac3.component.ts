@@ -10,11 +10,11 @@ export class Tarjetac3Component implements OnInit {
   @Input()
   nombre : string ='';
   @Input()
-  posicion : string ='';
+  Biografia : string ='';
   @Input()
   descripcion: string ="";
 
-  
+
 
   constructor() { }
 
