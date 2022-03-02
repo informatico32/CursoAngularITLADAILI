@@ -24,6 +24,7 @@ public titulo : string[];
 public personas: Persona[]=[];
 
 constructor() {
+  
 this.titulo=[
 'Diseñador',
 'Docente',

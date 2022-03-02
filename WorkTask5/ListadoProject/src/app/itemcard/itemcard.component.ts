@@ -18,6 +18,7 @@ export class ItemcardComponent implements OnInit {
 
   @Output()
   public onBorrar: EventEmitter<Persona> = new EventEmitter<Persona>();
+  
   constructor() { }
 
   ngOnInit(): void {
