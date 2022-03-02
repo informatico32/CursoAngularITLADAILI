@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { Tarjetac3Component } from './tarjetac3/tarjetac3.component';
 import { ListaProductoComponent } from './lista-producto/lista-producto.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
