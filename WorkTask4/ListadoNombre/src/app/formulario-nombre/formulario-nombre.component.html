@@ -1,0 +1,45 @@
+<h1 class="mx-5"><strong>Listado de Nombre</strong></h1>
+
+
+<div class="cotainer mx-5">
+<div class="card">
+<div class="card-body">
+
+<div class="form-group row mx-2">
+  <label for="form-label mt-4" >Nombre</label>
+  <input type="text"  [(ngModel)]="nombred" class="form-control w-auto " >
+</div>
+
+
+
+
+
+<div class="form-group row mx-2 ">
+  <label for="form-label mt-4" >Profesion</label>
+  <input type="text" [(ngModel)]="titulo" class="form-control w-auto"  >
+</div>
+
+
+
+
+
+<div class="form-group row mx-2 ">
+  <label for="form-label mt-4" >Biografia</label>
+  <textarea  [(ngModel)]="Biog" class="form-control w-auto"
+   ></textarea>
+</div>
+
+
+<button  (click)="Agregar()"  class="btn btn-primary my-3 mx-2">Agregar Nombre</button>
+
+</div>
+</div>
+
+
+
+</div>
+
+<app-listado [personacash]="this.personas"></app-listado>
+
+
+
